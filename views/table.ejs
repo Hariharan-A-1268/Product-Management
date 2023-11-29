@@ -1,0 +1,33 @@
+<%- include("header") -%>
+
+<h2>Stock Report</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Opening Balance</th>
+            <th>Receipt</th>
+            <th>Issue</th>
+            <th>Closing Balance</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><%= qty.ID %></td>
+            <td><%= qty.Description %></td>
+            <td><%= qty.OB %></td>
+            <td><%= receipt %></td>
+            <td><%= issue %></td>
+            <td><%= qty.Quantity %></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="mb-3 detail">
+    <span>
+        For More Details
+        <a href="/detail">Click Here</a>
+    </span>     
+</div>

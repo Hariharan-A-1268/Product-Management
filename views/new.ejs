@@ -1,0 +1,74 @@
+<%- include("header") -%>
+
+<form class="process" action="/new" method="post">
+
+    <h2>New Product Entry</h2>
+
+    <div class="mb-3 row left-border">
+        <label for="description" class="col-sm-3 col-form-label">Product Description</label>
+        <div class="col-sm-6">
+            <textarea name="Description" class="form-control" id="description" rows="3"></textarea>
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label for="process" class="col-sm-3 col-form-label">Process</label>
+        <div class="col-sm-6">
+            <select name="Process" class="form-control" id="process">
+                <option>Select</option>
+                <option>Process 1</option>
+                <option>Process 2</option>
+                <option>Process 3</option>
+                <option>Process 4</option>
+                <option>Process 5</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label for="Date" class="col-sm-3 col-form-label">Date of Process</label>
+        <div class="col-sm-6">
+            <input name="date" id="Date" class="form-control" type="date" />
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Quantity</label>
+        <div class="col-sm-6">
+            <input name="Quantity" class="form-control" type="text" placeholder="Enter Quantity" aria-label="default input example">
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Unit</label>
+        <div class="col-sm-6">
+            <select name="Unit" class="form-select" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="Nos">Nos</option>
+                <option value="Litres">Litres</option>
+                <option value="Kilograms">Kilograms</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Source Unit</label>
+        <div class="col-sm-6">
+            <input name="Source" class="form-control" type="text" placeholder="Enter Source Unit" aria-label="default input example">
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Destination Unit</label>
+        <div class="col-sm-6">
+            <input name="Destination" class="form-control" type="text" placeholder="Enter Destination Unit" aria-label="default input example">
+        </div>
+    </div>
+
+    <div class="col-auto submit-button">
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </div>
+
+</form>
+
+<%- include("footer") -%>

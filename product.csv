@@ -1,0 +1,3 @@
+ID,Description,Process,date,Quantity,Unit,SourceUnit,DestinationUnit
+1,Inverter,Process 1,21-10-2023,8,Nos,4,3
+2,Transformer,Process 2,20-10-2023,8,Kilograms,8,7

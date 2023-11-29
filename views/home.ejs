@@ -1,0 +1,20 @@
+<%- include("header") -%>
+
+<h2> Welcome <%= Name %> </h2>
+
+<div class="row">
+
+    <div class="d-grid gap-5 col-6 mx-auto">
+        <button class="btn btn-primary button btn-lg" type="button" onclick = "window.location.href = '/new';" ><span>New Product Entry</span></button>
+        <button class="btn btn-primary button btn-lg" type="button" onclick = "window.location.href = '/edit';"><span>Stock Update</span></button>
+    </div>
+
+    <div class="d-grid gap-5 col-6 mx-auto">
+        <button class="btn btn-primary button btn-lg" type="button" onclick = "window.location.href = '/view';" ><span>View all Products</span></button>
+        <button class="btn btn-primary button btn-lg" type="button" onclick = "window.location.href = '/report';" ><span>Stock Report</span></button>
+    </div>
+
+</div>
+
+
+<%- include("footer") -%>

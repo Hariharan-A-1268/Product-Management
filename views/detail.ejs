@@ -1,0 +1,49 @@
+<%- include("header") -%>
+
+<h2> Issue Details</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <% var id=0; %>
+    <tbody class="table-group-divider">
+        <% qty.Issue.forEach(function(Item){ %>
+            <tr>
+                <% id = id + 1 %>
+                <td><%= id %></td>
+                <td><%= Item.issueDate %></td>
+                <td><%= Item.Qty %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br> <br>
+
+<h2> Receipt Details</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <% var id=0; %>
+    <tbody class="table-group-divider">
+        <% qty.Receipt.forEach(function(Item){ %>
+            <tr>
+                <% id = id + 1 %>
+                <td><%= id %></td>
+                <td><%= Item.receiptDate %></td>
+                <td><%= Item.Qty %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>

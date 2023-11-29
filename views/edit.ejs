@@ -1,0 +1,52 @@
+<%- include("header") -%>
+
+<h2>Stock Update</h2>
+
+<form class="process" action="/edit" method="post">
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Description</label>
+        <div class="col-sm-6">
+            <input list="Description" name="Description" name="desc" autocomplete="off" class="form-control" type="text" placeholder="Enter Description" />
+
+            <datalist id="Description">
+                <% items.forEach(function(Item){ %>
+                    <option value = <%= Item.Description %> ></option>
+                <% }) %>
+            </datalist>
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label for="Date" class="col-sm-3 col-form-label">Date of Stock</label>
+        <div class="col-sm-6">
+            <input name="date" id="Date" class="form-control" type="date" />
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Quantity</label>
+        <div class="col-sm-6">
+            <input name="Quantity" class="form-control" type="text" placeholder="Enter Quantity" aria-label="default input example">
+        </div>
+    </div>
+
+    <div class="mb-3 row left-border">
+        <label class="col-sm-3 col-form-label">Stock</label>
+        <div class="col-sm-6">
+            <select name="Stock" class="form-select" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="Issue">Issue</option>
+                <option value="Receipt">Receipt</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-auto submit-button">
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </div>
+
+
+</form>
+
+<%- include("footer") -%>

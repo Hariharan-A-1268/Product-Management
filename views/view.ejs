@@ -1,0 +1,32 @@
+<%- include("header") -%>
+
+<h2>Product Details</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Process</th>
+            <th>Date</th>
+            <th>Quantity</th>
+            <th>Unit</th>
+            <th>Source Unit</th>
+            <th>Destination Unit</th>
+        </tr>
+    </thead>
+    <% Items.forEach(function(qty){ %>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><%= qty.ID %></td>
+            <td><%= qty.Description %></td>
+            <td><%= qty.Process %></td>
+            <td><%= qty.date %></td>
+            <td><%= qty.Quantity %></td>
+            <td><%= qty.Unit %></td>
+            <td><%= qty.SourceUnit %></td>
+            <td><%= qty.DestinationUnit %></td>
+        </tr>
+    </tbody>
+    <% }) %>
+</table>
