@@ -17,7 +17,7 @@ global.qty = {};
 
 // mongoose.connect('mongodb://127.0.0.1:27017/ProcessDB');
 
-mongoose.connect('mongodb+srv://Hariharan_A:AVNH1268@cluster0.awnduiy.mongodb.net/ProcessDB');
+mongoose.connect('mongodb+srv://Hariharan_A:PASSWORD@cluster0.awnduiy.mongodb.net/ProcessDB');
 
 const loginsSchema = new mongoose.Schema({
     Name: String,
